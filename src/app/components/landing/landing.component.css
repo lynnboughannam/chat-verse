@@ -1,0 +1,31 @@
+.container {
+    margin: auto;
+    text-align: center;
+    padding: 48px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: xx-large;
+    color: #564c6f;
+}
+
+.subtitle {
+    font-size: x-large;
+}
+
+.signup-button {
+
+    background-color: #746C89;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    color: #EFF0F4;
+    font-size: 1.5rem;
+}
+
+.content {
+    display: flex;
+}

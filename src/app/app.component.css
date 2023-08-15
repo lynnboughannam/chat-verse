@@ -1,0 +1,28 @@
+mat-toolbar {
+    justify-content: space-between;
+    background-color: #746C89 !important;
+}
+
+/* .content {
+    padding: 32px;
+} */
+
+
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-button {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image-toolbar {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    object-fit: cover;
+    border-radius: 50%;
+}

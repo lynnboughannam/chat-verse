@@ -1,0 +1,161 @@
+.container {
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+.chat-list {
+    width: 30%;
+    margin: 20px 35px 20px;
+    background: #ffff;
+    border-radius: 18px;
+}
+
+.mat-form-field-appearance-fill {
+    background-color: white !important;
+}
+
+.messages {
+    width: 60%;
+    margin: 20px 35px 20px;
+    background: #ffff;
+    border-radius: 16px;
+    padding: 25px;
+
+}
+
+
+.search-input {
+    margin: 25px;
+}
+
+
+
+.custom-mat-form-field {
+    width: 100%;
+    max-width: 100%;
+    background-color: #ffff;
+}
+
+.chat-title {
+    display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.chat-name {
+    font-weight: 600;
+}
+
+.chat-date {
+    font-size: 0.85rem;
+    font-weight: 300;
+}
+
+.last-message {
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 0 10px;
+}
+
+.messages-header {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.messages-header>img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+    height: 40px;
+    width: 40px;
+
+
+}
+
+.messages-header>h2 {
+    margin: 0;
+}
+
+.chat-area {
+    height: calc(100vh - 270px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    overflow: auto;
+}
+
+.chat-area> :first-child {
+    margin-top: auto;
+}
+
+/* pushes the first message down */
+
+.input-area>mat-form-field {
+    width: 100%;
+}
+
+
+.input-area {
+    padding-top: 16px;
+    padding-bottom: 8px;
+
+}
+
+.emoji {
+    padding: 10px;
+}
+
+.custom-button {
+    margin: 5px;
+    background: #3CA487 !important;
+    color: #EFF0F4 !important;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+}
+
+.chat-bubble-container {
+
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.chat-bubble {
+
+    background: #EFF0F4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    width: fit-content;
+    max-width: 50%;
+    position: relative;
+    border-radius: 0px 15px 15px;
+}
+
+.chat-bubble>.chat-date {
+    position: absolute;
+    bottom: 2px;
+    right: 8px;
+    font-size: 0.65rem;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+}
+
+.chat-bubble-container.sender {
+    justify-content: flex-end;
+
+}
+
+.chat-bubble-container.sender>.chat-bubble {
+    background: #746C89;
+    color: #EFF0F4;
+    border-radius: 15px 0px 15px 15px;
+
+}
+
+.chat-bubble-container.sender>.chat-bubble>.chat-date {
+    color: #EFF0F4;
+}

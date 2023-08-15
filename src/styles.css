@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto+Mono&family=Source+Sans+3:wght@200;300&display=swap');
+
+html,
+body {
+    height: 100%;
+    background: #EFF0F4;
+    /* color: #663ab6; */
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-container {
+
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    background: #ffff;
+
+    padding: 48px;
+    border-radius: 16px;
+
+
+}
+
+.form-container mat-form-field {
+    width: 100%;
+
+}
+
+
+
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.margin-top {
+    margin-top: 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* styles.css or your component's CSS file */
+.custom-snackbar {
+    background-color: blue;
+    color: red;
+    /* Optional: Change text color for better contrast */
+}
+
+.error-snackbar {
+    background-color: #f44336;
+    /* Red background color for error */
+    color: #ffffff;
+    /* White text color for better contrast */
+}
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle {
+    display: none;
+}

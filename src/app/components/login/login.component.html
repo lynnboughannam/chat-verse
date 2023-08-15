@@ -1,0 +1,31 @@
+<div class="form-container mat-elevation-z5">
+    <h1>Login</h1>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. pat@example.com" formControlName="email" />
+            <mat-error *ngIf="email?.errors?.['required']">
+                Email address is required
+            </mat-error>
+            <mat-error *ngIf="email?.errors?.['email']">
+                Please enter a valid email address
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+
+            <input matInput type="password" placeholder="Password" formControlName="password" />
+            <mat-error *ngIf="password?.errors?.['required']">
+                Password is required
+            </mat-error>
+        </mat-form-field>
+        <div class="center margin-top">
+            <button type="submit" mat-raised-button color="primary">Login!</button>
+        </div>
+
+        <span class="textSpan center margin-top">
+            New to ChatVerse?
+            <a routerLink="/sign-up" class="signupLink" color="primary">Sign Up!</a>
+        </span>
+    </form>
+</div>

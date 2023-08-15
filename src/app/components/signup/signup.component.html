@@ -1,0 +1,54 @@
+<div class="form-container mat-elevation-z5">
+    <h1>Sign UP to ChatVerse!</h1>
+    <form [formGroup]="signupForm" (ngSubmit)="submit()">
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+
+            <input matInput type="name" placeholder="Name" formControlName="name" />
+            <mat-error *ngIf="name?.errors?.['required']">
+                Name is required
+            </mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Ex. pat@example.com" formControlName="email" />
+            <mat-error *ngIf="email?.errors?.['required']">
+                Email address is required
+            </mat-error>
+            <mat-error *ngIf="email?.errors?.['email']">
+                Please enter a valid email address
+            </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+
+            <input matInput type="password" placeholder="Password" formControlName="password" />
+            <mat-error *ngIf="password?.errors?.['required']">
+                Password is required
+            </mat-error>
+        </mat-form-field>
+
+
+        <mat-form-field>
+            <mat-label>Confirm Password</mat-label>
+            <input matInput type="password" placeholder="Confirm Password" formControlName="confirmPassword" />
+            <mat-error *ngIf="confirmPassword?.errors?.['required']">
+                Confirm Password is required
+            </mat-error>
+        </mat-form-field>
+        <mat-error *ngIf="signupForm.errors?.['passwordsDontMatch']">
+            Passwords should match
+        </mat-error>
+
+
+        <div class="center margin-top">
+            <button type="submit" mat-raised-button color="primary">Sign Up!</button>
+        </div>
+
+        <!-- <span class="textSpan center margin-top">
+            Already part of ChatVerse?
+            <a routerLink="login" class="signupLink" color="primary">Login!</a>
+        </span> -->
+    </form>
+</div>
